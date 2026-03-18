@@ -1,0 +1,999 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 100;
+    background-color: hsl(0, 0%, 17%);
+    border-bottom: 1px solid rgb(73, 73, 73);
+}
+body{
+    background-color: hsl(0, 0%, 13%);
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+               /* HEADER SKELETON */
+
+
+
+.upleft, .middle, .upright{
+    width: 400px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.middle{
+    width: 600px;
+}
+
+
+                    /* LEFT */
+
+
+#fb-logo{
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin-left: 15px;
+}
+#search-box input{
+    border: none;
+    height: 45px;
+    width: 250px;
+}
+
+                    /* MIDDLE */
+
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+.middle button{
+    height: 100%;
+    width: 20%;
+    background-color: transparent;
+    border: none;
+}
+
+
+                  /* RIGHT */
+
+.upright{
+    display: flex;
+    justify-content: end;
+}
+.upright button{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+}
+.upright #acc-pic{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+
+               /* HEADER STYLING */
+
+                  /* LEFT */
+
+
+#fb-logo img{
+    width: 45px;
+    height: auto;
+    object-fit: cover;
+    cursor: pointer;
+}
+#search-box input{
+    border: none;
+    height: 45px;
+    width: 250px;
+    border-radius: 50px;
+    padding: 10px 10px 10px 35px;
+    background-color: rgb(51, 51, 51);
+    color: hsl(0, 1%, 68%);
+}
+#search-box{
+    position: relative;
+}
+#search-box i{
+    transform: translate(10px, 15px);
+    color: hsl(0, 1%, 68%);
+    position: absolute;
+}
+#search-box input::placeholder{
+    color: hsl(0, 1%, 68%);
+    font-size: 15px;
+}
+
+
+                    /* MIDDLE */
+
+
+.middle button{
+    color: hsl(0, 1%, 68%);
+    cursor: pointer;
+    border-radius: 10px;
+}
+#home-btn{
+    color: rgb(23, 110, 209);
+    border-bottom: 3px solid rgb(23, 110, 209);
+    border-radius: 0;
+}
+#friends-btn:hover, #video-btn:hover, #market-btn:hover, #groups-btn:hover{
+    background-color: rgb(53, 53, 53);
+}
+
+
+                  /* RIGHT */
+
+
+#acc-pic img{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.upright button{
+    background-color: rgb(59, 59, 59);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.upright button:hover{
+    background-color:  rgb(92, 92, 92);
+}
+
+
+
+                  /* MAIN SKELETON */
+                                   /* LEFT */
+
+                
+body{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.tools, .feed, .friendsBox{
+    height: 93vh;
+    width: 18%;
+    transform: translateY(60px);
+}
+.feed{
+    height: 250vh;
+    width: 35%;
+    position: absolute;
+    left: 615px;
+}
+.tools, .friendsBox{
+    position: fixed;
+}
+.tools{
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.friendsBox{
+    right: 0;
+}
+.options{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    height:5.5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.groupPic{
+    height: 30px;
+    width: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+
+                                   /* MIDDLE */
+
+
+.feed{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.upload{
+    width: 100%;
+    height: 125x;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.writeSmth{
+    height: 50px;
+    width: 100%;
+    margin-top: 10px;
+}
+.fileBox{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.file{
+    height: 40px;
+    width: 30%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+.storyBox{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: hidden;  
+}
+.story{
+    height: 100%;
+    width: 110px;
+    border-radius: 10px;
+}
+.post1{
+    height: 520px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.post-top{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.up{
+    height: 100%;
+    width: 30%;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.post1 .nameNdate{
+    height: 100%;
+    width: 30%;
+}
+.post1 .description{
+    width: 100%;
+    height: 30px;
+}
+.post-bottom{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.likes, .activity{
+    height: 100%;
+    width: 30%;
+    position: relative;
+}
+.likes{
+    width: 15%;
+}
+.interact{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.recomandedFriends{
+    width: 100%;
+    height: 360px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#title{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.recomandationBox{
+    width: 100%;
+    height: 265px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+}
+#see-all{
+    width: 100%;
+    height: 50px;
+
+}
+.rec-fr{
+    height: 100%;
+    width: 155px;
+    border: 1px solid rgba(204, 204, 204, 0.445);
+    border-radius: 15px;
+}
+.rec-fr-pic{
+    width: 100%;
+    height: 65%;
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+
+.post2{
+    height: 1060px;
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.post2 .nameNdate{
+    height: 100%;
+    width: 95%;
+}
+.post2 .description{
+    width: 100%;
+    height: 30px;
+}
+
+
+
+                                   /* RIGHT */
+
+
+#b-day-box{
+    width: 100%;
+    height: 6%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contacts{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.friendsBox{
+    overflow-y: hidden;
+    overflow: hidden;
+}
+.friendsBox:hover{
+    overflow: auto;
+}
+.yourFriend{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    height:5.5%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+                  /* MAIN STYLING */
+                                 /* LEFT */
+
+.tools{
+    color: white;
+    font-size: 15px;
+}
+.tools #accPic, #secondAcc{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 15px;
+}
+#meta, #friends, #save, #video, #marketplace, #memories, #groups{
+    height: 30px;
+    width: auto;
+    margin-left: 15px;
+}
+#SeeMore-btn{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    color: white;
+    border: none;
+    background-color:  rgb(59, 59, 59);
+    cursor: pointer;
+}
+.options:hover{
+    background-color:  rgb(53, 53, 53);
+    #SeeMore-btn{
+        background-color: rgb(77, 76, 76);
+    }
+}
+hr{
+    width: 97%;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin: 0px 5px;
+}
+
+.groupPic img{
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+}
+#copyrights img{
+    height: 10px;
+}
+#copyrights{
+    color: rgb(189, 187, 187);
+    position: absolute;
+    bottom: 0;
+}
+#shortcuts{
+    font-weight: bold;
+    color: rgb(189, 187, 187);
+    margin-left: 10px;
+    font-size: 17px;
+}
+
+
+                                   /* MIDDLE */
+
+
+.upload{
+    background-color: hsl(0, 0%, 17%);
+}
+.writeSmth{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.writeSmth img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.writeSmth input{
+    border: none;
+    height: 40px;
+    width: 88%;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background-color: rgb(51, 51, 51);
+    color: hsl(0, 1%, 68%);
+    font-size: 16px;
+    cursor: pointer;
+}
+.writeSmth input:hover{
+    background-color: hsla(0, 0%, 33%, 0.705);;
+}
+.writeSmth input::placeholder{
+    color: hsl(0, 1%, 68%);
+}
+#live-file{
+    color: rgb(223, 3, 3);
+}
+#pic-file{
+    color: rgb(3, 187, 3);
+}
+#feeling{
+    color: rgb(255, 217, 0);
+}
+.file p{
+    color: rgb(189, 187, 187);
+    font-weight: bold;
+    font-size: 15px;
+}
+.file:hover{
+    background-color: rgb(59, 59, 59);
+    cursor: pointer;
+}
+#swipe{
+   background-color: hsl(0, 0%, 17%); 
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   border: none;
+   position: absolute;
+   right: 20px;
+   cursor: pointer;
+}
+#swipe i{
+    color: grey;
+}
+#swipe:hover{
+    background-color:  rgb(53, 53, 53);
+}
+.story{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    align-items: center;
+    cursor: pointer;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-size 0.3s ease-in-out;
+    overflow: hidden;
+}
+#addStory{
+    background-color:  hsl(0, 0%, 17%);
+}
+#addStory img{
+    width: 100%;
+    height: 140px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#addStory img:hover{
+    transform: scale(1.05);
+    filter: brightness(0.9);
+}
+#addStory button{
+    height: 40px;
+    width: 40px;
+    border: 4px solid hsl(0, 0%, 17%);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    background-color: rgb(27, 125, 216);
+    cursor: pointer;
+}
+.story p{
+    position: absolute;
+    bottom: 10px;
+    color: rgb(224, 224, 224);
+    font-weight: bold;
+    font-size: 14px;
+}
+#story2 p{
+    left: 10px;
+}
+#story1{
+    background-image: url(media/story1.jpg);
+}
+#story2{
+    background-image: url(media/story2.jpg);
+}
+#story3{
+    background-image: url(media/story3.png);
+}
+#story4{
+    background-image: url(media/story4.jpg);
+}
+#story5{
+    background-image: url(media/story5.jpg);
+}
+#story1:hover{
+    background-size: 155%;
+}
+#story2:hover{
+    background-size: 115%;
+}
+#story3:hover{
+    background-size: 135%;
+}
+#story4:hover{
+    background-size: 115%;
+}
+#story5:hover{
+    background-size: 150%;
+}
+.story:hover{
+    filter: brightness(0.9);
+}
+.story img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 81, 255, 0.856);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.post1{
+    background-color: hsl(0, 0%, 17%);
+}
+#fr-post1{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.nameNdate p{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+.nameNdate small{
+    color: hsl(0, 0%, 58%);
+    font-weight: bold;
+}
+.left img:hover{
+    filter: brightness(1.1);
+    cursor: pointer;
+}
+.left p:hover, .left small:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.right{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.right button{
+    height: 40px;
+    width: 40px;
+    color: hsl(0, 0%, 58%);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+}
+.right button:hover{
+    background-color: rgb(53, 53, 53);
+    cursor: pointer;
+}
+.description p{
+    color: rgba(255, 255, 255, 0.849);
+    margin-left: 10px;
+}
+.poast1 #post-pic1{
+    width: 100%;
+    height: auto;
+}
+#heart{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    filter: drop-shadow(2px 0px  hsl(0, 0%, 17%));
+    z-index: 2;
+}
+#like{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 27px;
+}
+.likes p{
+    position: absolute;
+    left: 55px;
+    top: 4px;
+    color: hsl(0, 0%, 58%);
+    font-size: 15px;
+}
+.likes img{
+    cursor: pointer;
+}
+.likes p:hover{
+    text-decoration-line: underline ;
+    cursor: pointer;
+}
+.activity{
+    display: flex;
+    justify-content: end;
+}
+.activity p{
+    color: hsl(0, 0%, 58%);
+    margin-right: 10px;
+}
+.activity p:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+.interact button{
+    padding: 8px;
+    width: 32%;
+    border: none;
+    background-color: transparent;
+    color: hsl(0, 1%, 72%);
+    font-size: 15px;
+}
+.interact i{
+    margin-right: 5px;
+}
+.interact button:hover{
+    background-color: rgb(53, 53, 53);
+    border-radius: 6px;
+    cursor: pointer;
+}
+.recomandedFriends{
+    background-color: hsl(0, 0%, 17%);
+}
+#title p{
+    margin-left: 10px;
+    color: hsl(0, 0%, 58%);
+    font-weight: bold;
+}
+#title button{
+    border-radius: 50%;
+    padding: 4px;
+    height: 40px;
+    width: 40px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(0, 1%, 65%);
+    margin-right: 10px;
+}
+#title button:hover{
+    background-color: rgb(53, 53, 53);
+}
+#see-all{
+    display: flex;
+    justify-content: center;
+}
+#see-all button{
+    width: 96%;
+    height: 95%;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 17%);
+    color: rgba(73, 166, 253, 0.897);
+    font-size: 16px;
+}
+#see-all button:hover{
+    background-color: rgb(53, 53, 53);
+}
+.recomandationBox #swipe-fr{
+    background-color: hsl(0, 0%, 17%); 
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: none;
+    position: absolute;
+    right: 15px;
+    top: 90px;
+    cursor: pointer;
+
+}
+.recomandationBox #swipe-fr{
+    color: grey;
+}
+.recomandationBox #swipe-fr:hover{
+    background-color:  rgb(53, 53, 53);
+}
+.rec-fr-pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+    cursor: pointer;
+}
+.rec-fr p{
+    margin: 5px 6px;
+    color: rgba(255, 255, 255, 0.849);
+    font-weight: bold;
+    cursor: pointer;
+}
+.rec-fr p:hover{
+    text-decoration-line: underline;
+}
+#common-fr{
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.rec-fr small{
+    color:hsl(0, 0%, 58%);
+    cursor: pointer;
+}
+.rec-fr small:hover{
+    background-color: rgb(83, 83, 83);
+}
+#same-fr{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+.add-btn{
+    font-size: 15px;
+    width: 90%;
+    height: 30px;
+    margin-left: 7px;
+    margin-top: 23px;
+    border-radius: 7px;
+    border: none;
+    color: rgba(73, 166, 253, 0.897);
+    font-weight: bold;
+    background-color: rgba(58, 76, 100, 0.685);
+    cursor: pointer;
+}
+.add-btn:hover{
+    background-color: rgba(83, 109, 143, 0.685);
+}
+.second{
+    margin-top: 5px;
+}
+#X-btn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.356);
+    color: rgba(255, 255, 255, 0.829);
+    cursor: pointer;
+}
+#X-btn:hover{
+    background-color: rgba(0, 0, 0, 0.26);
+}
+
+.post2{
+    background-color: hsl(0, 0%, 17%);
+}
+#fr-post2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 10px;
+}
+.post2 span{
+    color: hsl(0, 0%, 58%);
+    font-weight: bold; 
+}
+#like2{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    left: 10px;
+    filter: drop-shadow(2px 0px  hsl(0, 0%, 17%));
+    z-index: 2;
+}
+#wow{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 26px;
+    top: -3px;
+}
+
+
+                                   /* RIGHT */
+
+
+#gift{
+    height: 35px;
+    width: auto;
+}
+#b-day-box p{
+    color: white;
+    font-size: 15px;
+}
+#b-day{
+    color: rgb(189, 187, 187);
+    font-weight: bold;
+    margin: 15px 0px;
+    font-size: 17px;
+}
+#b-day-box:hover{
+    background-color:  rgb(53, 53, 53);
+    cursor: pointer;
+    border-radius: 10px;
+}
+.contacts{
+    color: rgb(189, 187, 187);
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.contacts i{
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#moreBtn{
+    margin-right: 10px;
+}
+.contacts i:hover{
+        background-color:  rgb(53, 53, 53);
+}
+#friendPic{
+    height: 35px;
+    width: 35px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+#metaFriend{
+    height: 30px;
+    width: 30px;
+}
+.yourFriend p{
+    color: white;
+    font-size: 15px;
+}
+.yourFriend i{
+    color: hsl(212, 81%, 49%);
+}
+.yourFriend:hover{
+    background-color:  rgb(53, 53, 53);
+}
+.friendsBox::-webkit-scrollbar{
+    background-color: transparent;
+    width: 8px;
+}
+.friendsBox::-webkit-scrollbar-thumb{
+    background-color: hsl(0, 0%, 42%); 
+    border-radius: 5px;
+}
+.yourFriend{
+    position: relative;
+}
+#online{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    background-color: rgb(2, 170, 2);
+    position: absolute;
+    bottom: 6px;
+    left: 25px;
+    border: 2px solid hsl(0, 0%, 13%);
+}
+
+
+

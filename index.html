@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="facebook.css" />
+  <link rel="icon" href="media/FB-logo.png">
+
+</head>
+
+
+                                 <!---------------- HEADER ---------------->
+
+
+<header>
+
+  <div class="upleft">
+
+    <div id="fb-logo"><img src="media/FB-logo.png"></div>
+    <div id="search-box">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="Search Facebook">
+    </div>
+
+   </div>
+
+  <div class="middle">
+
+    <button id="home-btn" title="Home"><i class="fa-solid fa-house fa-xl"></i></button>
+    <button id="friends-btn" title="Friends"><i class="fa-solid fa-user-group fa-xl"></i></button>
+    <button id="video-btn" title="Video"><i class="fa-solid fa-display fa-xl"></i></button>
+    <button id="market-btn" title="Marketplace"><i class="fa-solid fa-store fa-xl"></i></button>
+    <button id="groups-btn" title="Groups"><i class="fa-solid fa-users-between-lines fa-xl"></i></button>
+
+   </div>
+      
+  <div class="upright">
+
+    <button id="menu-btn" title="Menu"><i class="fa-solid fa-grip fa-xl"></i></button>
+    <button id="mess-btn" title="Messenger"><i class="fa-brands fa-facebook-messenger fa-xl"></i></button>
+    <button id="notification-btn" title="Notifications"><i class="fa-solid fa-bell fa-xl"></i></button>
+    <div id="acc-pic"><img src="media/account-pic.jpg" title="Account"></div>
+
+  </div>
+
+</header>
+
+
+                                 <!---------------- MAIN ---------------->
+
+<body>
+    
+
+                                   <!---------------- LEFT ---------------->
+
+
+  <div class="tools">
+
+    <div class="options">
+      <img id="accPic" src="media/account-pic.jpg">
+      <p>Mariah Smith</p>
+    </div>
+
+    <div class="options">
+      <img id="meta" src="media/meta-logo.png">
+      <p>Meta AI</p>
+    </div>
+
+    <div class="options">
+      <img id="friends" src="media/friends-logo.png">
+      <p>Friends</p>
+    </div>
+
+    <div class="options">
+      <svg id="memories" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <defs>
+          <linearGradient id="blueGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#0d47a1" /> 
+            <stop offset="100%" stop-color="#42a5f5" /> 
+          </linearGradient>
+        </defs>
+        <path fill="url(#blueGrad2)" d="M320 128C426 128 512 214 512 320C512 426 426 512 320 512C254.8 512 197.1 479.5 162.4 429.7C152.3 415.2 132.3 411.7 117.8 421.8C103.3 431.9 99.8 451.9 109.9 466.4C156.1 532.6 233 576 320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C234.3 64 158.5 106.1 112 170.7L112 144C112 126.3 97.7 112 80 112C62.3 112 48 126.3 48 144L48 256C48 273.7 62.3 288 80 288L104.6 288C105.1 288 105.6 288 106.1 288L192.1 288C209.8 288 224.1 273.7 224.1 256C224.1 238.3 209.8 224 192.1 224L153.8 224C186.9 166.6 249 128 320 128zM344 216C344 202.7 333.3 192 320 192C306.7 192 296 202.7 296 216L296 320C296 326.4 298.5 332.5 303 337L375 409C384.4 418.4 399.6 418.4 408.9 409C418.2 399.6 418.3 384.4 408.9 375.1L343.9 310.1L343.9 216z"/>
+      </svg>
+      <p>Memories</p>
+    </div>
+
+    <div class="options">
+      <img id="save" src="media/save-logo.png">
+      <p>Saved</p>
+    </div>
+
+    <div class="options">
+      <svg id="groups" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <defs>
+          <linearGradient id="symBlueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#0d47a1" />   
+            <stop offset="50%" stop-color="#42a5f5" /> 
+            <stop offset="100%" stop-color="#0d47a1" /> 
+          </linearGradient>
+        </defs>
+        <path fill="url(#symBlueGrad)" d="M320 80C377.4 80 424 126.6 424 184C424 241.4 377.4 288 320 288C262.6 288 216 241.4 216 184C216 126.6 262.6 80 320 80zM96 152C135.8 152 168 184.2 168 224C168 263.8 135.8 296 96 296C56.2 296 24 263.8 24 224C24 184.2 56.2 152 96 152zM0 480C0 409.3 57.3 352 128 352C140.8 352 153.2 353.9 164.9 357.4C132 394.2 112 442.8 112 496L112 512C112 523.4 114.4 534.2 118.7 544L32 544C14.3 544 0 529.7 0 512L0 480zM521.3 544C525.6 534.2 528 523.4 528 512L528 496C528 442.8 508 394.2 475.1 357.4C486.8 353.9 499.2 352 512 352C582.7 352 640 409.3 640 480L640 512C640 529.7 625.7 544 608 544L521.3 544zM472 224C472 184.2 504.2 152 544 152C583.8 152 616 184.2 616 224C616 263.8 583.8 296 544 296C504.2 296 472 263.8 472 224zM160 496C160 407.6 231.6 336 320 336C408.4 336 480 407.6 480 496L480 512C480 529.7 465.7 544 448 544L192 544C174.3 544 160 529.7 160 512L160 496z"/>
+      </svg>
+      <p>Groups</p>
+    </div>
+
+    <div class="options">
+      <img id="video" src="media/videos-logo.png">
+      <p>Video</p>
+    </div>
+
+    <div class="options">
+      <svg id="marketplace" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640">
+        <defs>
+          <linearGradient id="blueGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+            <stop offset="0%" stop-color="#0d47a1" />
+            <stop offset="100%" stop-color="#42a5f5" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#blueGrad)" d="M94.7 136.3C101.6 112.4 123.5 96 148.4 96L492.4 96C517.3 96 539.2 112.4 546.2 136.3L569.6 216.5C582.4 260.2 549.5 304 504 304C477.7 304 454.6 289.1 443.2 266.9C431.6 288.8 408.6 304 381.8 304C355.2 304 332.1 289 320.5 267C308.9 289 285.8 304 259.2 304C232.4 304 209.4 288.9 197.8 266.9C186.4 289 163.3 304 137 304C91.4 304 58.6 260.3 71.4 216.5L94.7 136.3zM160.4 416L480.4 416L480.4 349.6C488 351.2 495.9 352 503.9 352C518.2 352 531.9 349.4 544.4 344.8L544.4 496C544.4 522.5 522.9 544 496.4 544L144.4 544C117.9 544 96.4 522.5 96.4 496L96.4 344.8C108.9 349.4 122.5 352 136.9 352C145 352 152.8 351.2 160.4 349.6L160.4 416z"/>
+      </svg>
+      <p>Marketplace</p>
+    </div>
+
+    <div class="options">
+      <button id="SeeMore-btn"><i class="fa-solid fa-angle-down"></i></button>
+      <p>See More</p>
+    </div>
+
+    <hr>
+
+    <p id="shortcuts">Your shortcuts</p>
+
+    <div class="options">
+      <div class="groupPic"><img src="media/cats.png"></div>
+      <p>Cats Lovers</p>
+    </div>
+
+    <div class="options">
+      <div class="groupPic"><img src="media/book.png"></div>
+      <p>Let's Read a Book</p>
+    </div>
+
+    <div class="options">
+      <div class="groupPic"><img src="media/anime.jpg"></div>
+      <p>Best Otaku Ever</p>
+    </div>
+
+    <div class="options">
+      <img id="secondAcc" src="media/YukoChan.jpg">
+      <p>Yuko-Chan</p>
+    </div>
+
+
+    <div class="options">
+      <button id="SeeMore-btn"><i class="fa-solid fa-angle-down"></i></button>
+      <p>See More</p>
+    </div>
+
+    <small id="copyrights">Privacy · Terms · Advertising <img src="media/adchoises.png"> · Ad choises · Cookies · More · Meta &copy 2025</small>
+
+  </div>
+
+
+                                   <!---------------- MIDDLE ---------------->
+                                 <!---------------- UPLOAD SECTION ---------------->
+
+  <div class="feed">
+
+    <div class="upload">
+
+      <div class="writeSmth">
+        <img src="media/account-pic.jpg">
+        <input type="text" placeholder="What's on your mind, Mariah?">
+      </div>
+
+      <hr>
+
+      <div class="fileBox">
+
+        <div class="file">
+          <i id="live-file" class="fa-solid fa-video fa-xl"></i>
+          <p>Live Video</p>
+        </div>
+
+        <div class="file">
+          <i id="pic-file" class="fa-solid fa-images fa-xl"></i>
+          <p> Photo/video</p>
+        </div>
+
+        <div class="file">
+          <i id="feeling" class="fa-regular fa-face-grin fa-xl"></i>
+          <p>Feeling/activity</p>
+        </div>
+
+      </div>
+
+    </div>
+
+                                     <!---------------- STORY SECTION ---------------->
+
+
+    <div class="storyBox">
+      <div class="story" id="addStory">
+        <img src="media/account-pic.jpg">
+        <button><i class="fa-solid fa-plus fa-xl"></i></button>
+        <p>Create story</p>
+      </div>
+
+      <div class="story" id="story1">
+        <img src="media/story-friend-1.jpg">
+        <p>Steve Tommy</p>
+      </div>
+
+      <div class="story" id="story2">
+        <img src="media/story-friend-2.jpg">
+        <p>Vanessa C. Kane</p>
+      </div>
+
+      <div class="story" id="story3">
+        <img src="media/story-friend-3.jpg">
+        <p>Marta Stewart</p>
+      </div>
+
+      <div class="story" id="story4">
+        <img src="media/story-friend-4.jpg">
+        <p>Coleen Kim</p>
+      </div>
+
+      <div class="story" id="story5">
+        <img src="media/story-friend-5.jpg">
+        <p> Parker Jr.</p>
+      </div>
+
+      <button id="swipe"><i class="fa-solid fa-chevron-right fa-xl"></i></button>
+    </div>
+
+
+                                 <!---------------- POST NO.1 ---------------->
+
+
+    <div class="post1">
+
+      <div class="post-top">
+
+        <div class="up left">
+
+          <img id="fr-post1" src="media/friend-post1.jpg">
+          <div class="nameNdate">
+            <p>Evelyn Rand</p>
+            <small title="Monday, 11 August at 12:43">11h • <i class="fa-solid fa-earth-americas" title="Public"></i></small>
+          </div>
+
+        </div>
+
+        <div class="up right">
+          <button><i class="fa-solid fa-ellipsis fa-lg"></i></button>
+          <button><i class="fa-solid fa-x fa-lg"></i></button>
+        </div>
+
+      </div>
+
+        <div class="description">
+          <p>always like the first time 😍</p>
+        </div>
+      
+        <img id="post-pic1" src="media/post-no1.jpg">
+
+        <div class="post-bottom">
+
+          <div class="likes">
+            <img id="heart" src="media/heart-reaction.png">
+            <img id="like" src="media/like-reaction.png">
+            <p>53</p>
+          </div>
+
+          <div class="activity">
+            <p>3 comments</p>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="interact">
+          <button><i class="fa-regular fa-thumbs-up fa-xl"></i> Like</button>
+          <button><i class="fa-regular fa-comment fa-flip-horizontal fa-xl"></i> Comment</button>
+          <button><i class="fa-solid fa-share fa-xl"></i> Share</button>
+        </div>
+
+    </div>
+
+
+                                 <!---------------- RECOMANDED FRIENDS SECTION ---------------->
+
+
+    <div class="recomandedFriends">
+
+      <div id="title">
+        <p>People you may know</p>
+        <button><i class="fa-solid fa-ellipsis fa-lg"></i></button>
+      </div>
+
+      <div class="recomandationBox">
+        <div class="rec-fr">
+
+          <div class="rec-fr-pic">
+            <img src="media/rec-fr-1.webp">
+            <button id="X-btn"><i class="fa-solid fa-x"></i></button>
+          </div>
+
+          <p>Alyssa Anbu</p>
+          <button class="add-btn"><i class="fa-solid fa-user-plus"></i> Add friend</button>
+        </div>
+
+        <div class="rec-fr">
+
+          <div class="rec-fr-pic">
+            <img src="media/rec-fr-2.webp">
+            <button id="X-btn"><i class="fa-solid fa-x"></i></button>
+          </div>
+
+          <p>Renn Lee</p>
+
+          <div id="same-fr">
+            <img id="common-fr" src="media/friend-14.jpg">
+            <small> 1 common friend</small>
+          </div>
+
+        <button class="add-btn second"><i class="fa-solid fa-user-plus"></i> Add friend</button>
+
+        </div>
+
+        <div class="rec-fr">
+
+          <div class="rec-fr-pic">
+            <img src="media/rec-fr-3.jpg">
+            <button id="X-btn"><i class="fa-solid fa-x"></i></button>
+          </div>
+
+          <p>Irena S</p>
+          <button class="add-btn"><i class="fa-solid fa-user-plus"></i> Add friend</button>
+        </div>
+
+        <div class="rec-fr">
+
+          <div class="rec-fr-pic">
+            <img src="media/rec-fr-4.jpg">
+            <button id="X-btn"><i class="fa-solid fa-x"></i></button>
+          </div>
+
+          <p>Md Mariano</p>
+          <button class="add-btn"><i class="fa-solid fa-user-plus"></i> Add friend</button>
+        </div>
+
+        <button id="swipe-fr"><i class="fa-solid fa-chevron-right fa-lg"></i></button>
+      </div>
+      
+      <div id="see-all">
+        <button>See all</button>
+      </div>
+
+    </div>
+
+
+                                 <!---------------- POST NO.2 ---------------->
+
+
+     <div class="post2">
+
+      <div class="post-top">
+
+        <div class="up left">
+
+          <img id="fr-post2" src="media/friend-post2.png">
+          <div class="nameNdate">
+            <p>Sam P. Konrad <span>— in </span>Mount Dana</p>
+            <small title="Sunday, 10 August 2025 at 09:47">10 August at 09:47  • <i class="fa-solid fa-earth-americas" title="Public"></i></small>
+          </div>
+
+        </div>
+
+        <div class="up right">
+          <button><i class="fa-solid fa-ellipsis fa-lg"></i></button>
+          <button><i class="fa-solid fa-x fa-lg"></i></button>
+        </div>
+
+      </div>
+
+        <div class="description">
+          <p>New Weekend, new trip!</p>
+        </div>
+      
+        <img id="post-pic1" src="media/post-no2.jpg">
+
+        <div class="post-bottom">
+
+          <div class="likes">
+            <img id="heart" src="media/heart-reaction.png">
+            <img id="like2" src="media/like-reaction.png">
+            <img id="wow" src="media/wow-reaction.png">
+            <p>110</p>
+          </div>
+
+          <div class="activity">
+            <p>12 comments</p>
+          </div>
+
+        </div>
+
+        <hr>
+
+        <div class="interact">
+          <button><i class="fa-regular fa-thumbs-up fa-xl"></i> Like</button>
+          <button><i class="fa-regular fa-comment fa-flip-horizontal fa-xl"></i> Comment</button>
+          <button><i class="fa-solid fa-share fa-xl"></i> Share</button>
+        </div>
+
+    </div>
+
+
+  </div>
+
+
+                                   <!---------------- RIGHT ---------------->  
+
+
+  <div class="friendsBox">
+
+    <p id="b-day">Birthdays</p>
+    <div id="b-day-box">
+      <img id="gift" src="media/gift-logo.png">
+      <p>Today is <b>Ginger Holly</b>'s birthday.</p>
+    </div>
+
+    <hr>
+
+    <div class="contacts">
+      
+      <div>Contacts</div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <i id="moreBtn" class="fa-solid fa-ellipsis"></i>
+      </div>
+
+    </div>
+
+    <div class="yourFriend">
+      <img id="metaFriend" src="media/meta-logo.png">
+      <p>Meta AI <i class="fa-solid fa-circle-check fa-xs"></i></p>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-1.jpg">
+      <p>Juan Rodriguez</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-2.jpg">
+      <p>Sorana Yasmine</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-3.jpg">
+      <p>Kriss Kristyne</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-4.jpg">
+      <p>JB Harves</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-5.jpg">
+      <p>Paul Wendel</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-6.png">
+      <p>Justin Justin Westermeyer</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-7.jpg">
+      <p>Felicia Margot Lopez</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-8.jpg">
+      <p>Fery Grace</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-9.png">
+      <p>Oliver Huston</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-10.jpg">
+      <p>Maria  Anderson</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-11.jpg">
+      <p>Viktor Pavolsvki</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-12.jpg">
+      <p>Blythe Tallulah</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-13.jpg">
+      <p>Robert Michael Ferris</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-14.jpg">
+      <p>Josephine Angels</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-15.jpg">
+      <p>Nora Rose</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-16.jpg">
+      <p>Ivy Madison</p>
+      <div id="online"></div>
+    </div>
+
+    <div class="yourFriend">
+      <img id="friendPic" src="media/friend-17.webp">
+      <p>Taylor Nelson</p>
+      <div id="online"></div>
+    </div>
+
+   
+
+  </div>
+
+
+</body>
+
+</html>
