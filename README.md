@@ -2,7 +2,8 @@
 
 A desktop recreation of the Facebook news feed interface, built with HTML and CSS.
 
-**Live site:** https://fb-clone-desktop.netlify.app/
+**Live site:** https://fb-clone-desktop.netlify.app/  /  
+https://biancasud.github.io/Project-2-Facebook_clone/
 
 ![Facebook Clone]
 <img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/eead28ec-cad4-4680-8eb6-fb9dac19ea6e" />
