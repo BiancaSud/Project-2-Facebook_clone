@@ -4,7 +4,9 @@ A desktop recreation of the Facebook news feed interface, built with HTML and CS
 
 **Live site:** https://fb-clone-desktop.netlify.app/
 
-![Facebook Clone](screenshot.png)
+![Facebook Clone]
+<img width="1919" height="958" alt="image" src="https://github.com/user-attachments/assets/eead28ec-cad4-4680-8eb6-fb9dac19ea6e" />
+
 
 ## About
 
@@ -35,10 +37,10 @@ Open `index.html` in a browser at desktop width.
 
 ## What I focused on
 
-Three columns where the outer two stay fixed while the centre scrolls — the first layout I built that needed independent scroll regions rather than one flowing page. Matching Facebook's spacing also forced a level of precision I had not needed before: in a familiar interface, a few pixels of drift is visible immediately.
+Three columns where the outer two stay fixed while the center scrolls — the first layout I built that needed independent scroll regions rather than one flowing page. Matching Facebook's spacing also forced a level of precision I had not needed before: in a familiar interface, a few pixels of drift is visible immediately.
 
 ## Possible improvements
 
-- Responsive behaviour (the sidebars should collapse well before desktop width)
+- Responsive behavior (the sidebars should collapse well before desktop width)
 - Interactive elements — the composer, reactions and comments are presentation only
 - Accessibility: proper landmarks and alt text throughout
